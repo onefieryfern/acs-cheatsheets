@@ -1,0 +1,6 @@
+# pdflatex temporary files
+*.aux
+*.log
+
+# pdflatex output files
+*.pdf
