@@ -13,7 +13,7 @@
 
 \section{Analiză Fourier}
 
-Seria Fourier asociată funcției $f$:
+Seria Fourier asociată funcției $f$ (funcție periodică cu perioada $T=2\pi$):
 \begin{displaymath}
     \mathrm{S}_f(t)=\frac{a_0}{2}+\sum_{n\geq1}^\infty (a_n\cos nt+b_n\sin nt)
 \end{displaymath}
@@ -24,6 +24,14 @@ unde $a_n$ și $b_n$ sunt coeficienții Fourier asociați funcției $f$:
 \end{displaymath}
 \begin{displaymath}
     b_n=\frac{1}{\pi}\int_{-\pi}^\pi{f(t)\sin nt\,\mathrm{d}t}\quad(n\geq1)
+\end{displaymath}
+% Orice funcție periodică se poate transforma într-o funcție periodică cu perioada $2\pi$:
+% \begin{displaymath}
+%     g(t)=f(t\cdot\frac{T}{2\pi})
+% \end{displaymath}
+Observație pentru funcțiile a căror formă nu este cunoscută pe $(-\pi,\pi)$:
+\begin{displaymath}
+    \int_a^{a+T}{f(t)\,\mathrm{d}t}=\int_0^T{f(t)\,\mathrm{d}t},\,\forall a\in\mathbb{R}
 \end{displaymath}
 Formula lui Parseval:
 \begin{displaymath}
