@@ -14,5 +14,5 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v6
         with:
-          name: PDF
+          name: acs-cheatsheets-pdf
           path: ./*.pdf
