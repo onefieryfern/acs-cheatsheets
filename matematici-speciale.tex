@@ -17,52 +17,28 @@ Seria Fourier asociată funcției $f$:
 \begin{displaymath}
     \mathrm{S}_f(t)=\frac{a_0}{2}+\sum_{n\geq1}^\infty (a_n\cos nt+b_n\sin nt)
 \end{displaymath}
-Unde $a_n$ și $b_n$ sunt coeficienții Fourier asociați funcției $f$:
+
+unde $a_n$ și $b_n$ sunt coeficienții Fourier asociați funcției $f$:
 \begin{displaymath}
     a_n=\frac{1}{\pi}\int_{-\pi}^\pi{f(t)\cos nt\,\mathrm{d}t}\quad(n\geq0)
 \end{displaymath}
 \begin{displaymath}
     b_n=\frac{1}{\pi}\int_{-\pi}^\pi{f(t)\sin nt\,\mathrm{d}t}\quad(n\geq1)
 \end{displaymath}
-
-\begin{displaymath}
-    \int{\cos nt\,\mathrm{d}t}=\frac{\sin nt}{n}+C
-\end{displaymath}
-
-\begin{displaymath}
-    \int{\sin nt\,\mathrm{d}t}=-\frac{\cos nt}{n}+C
-\end{displaymath}
-
-\begin{displaymath}
-    \sin(-x)=-sin(x)
-\end{displaymath}
-
-\begin{displaymath}
-    \cos(-x)=cos(x)
-\end{displaymath}
-
-\begin{displaymath}
-    f(-x)=-f(x)\Longrightarrow\int_{-a}^a{f(x)\,\mathrm{d}x}=0
-\end{displaymath}
-
-\begin{displaymath}
-    f(-x)=f(x)\Longrightarrow\int_{-a}^a{f(x)\,\mathrm{d}x}=2\int_0^a{f(x)\,\mathrm{d}x}
-\end{displaymath}
-
-\begin{displaymath}
-    \sin n\pi=0
-\end{displaymath}
-
-\begin{displaymath}
-    \cos n\pi=(-1)^n
-\end{displaymath}
-
 Formula lui Parseval:
 \begin{displaymath}
     \frac{{a_0}^2}{2}+\sum_{n\geq1}^\infty ({a_n}^2+{b_n}^2) = \frac{1}{\pi}\int_{-\pi}^{\pi}{(f(t))^2\,\mathrm{d}t}
 \end{displaymath}
 
+\subsection{Informații utile}
+
 \begin{enumerate}
+\item
+\begin{enumerate}
+\item \(\displaystyle{f(-x)=-f(x)\Longrightarrow\int_{-a}^a{f(x)\,\mathrm{d}x}=0}\)
+\item \(\displaystyle{f(-x)=f(x)\Longrightarrow\int_{-a}^a{f(x)\,\mathrm{d}x}=2\int_0^a{f(x)\,\mathrm{d}x}}\)
+\end{enumerate}
+
 \item
 \begin{enumerate}
 \item Produsul a două funcții de aceeași paritate este o funcție pară.
@@ -72,6 +48,18 @@ Formula lui Parseval:
 \begin{enumerate}
 \item Prin compunerea unei funcții pare cu o funcție de orice paritate rezultă o funcție pară.
 \item Prin compunerea a două funcții impare rezultă o funcție impară.
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item \(\displaystyle{\int{\cos nt\,\mathrm{d}t}=\frac{\sin nt}{n}+C}\)
+\item \(\displaystyle{\int{\sin nt\,\mathrm{d}t}=-\frac{\cos nt}{n}+C}\)
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item \(\sin n\pi=0\)
+\item \(\cos n\pi=(-1)^n\)
 \end{enumerate}
 \end{enumerate}
 
