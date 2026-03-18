@@ -3,9 +3,11 @@
 \usepackage{mathtools}
 \usepackage{amssymb}
 
+\DeclareMathOperator{\sinc}{sinc}
+
 \title{Breviar teoretic -- Matematici Speciale}
 \author{Andrei Florea}
-\date{17 martie 2026}
+\date{18 martie 2026}
 
 \begin{document}
 \maketitle
@@ -68,6 +70,16 @@ Formula lui Parseval:
 \item \(\sin n\pi=0\)
 \item \(\cos n\pi=(-1)^n\)
 \end{enumerate}
+
+\item Funcția sinus atenuat
+\begin{displaymath}
+    \sinc\colon\mathbb{R}\to\mathbb{R},\quad
+    \sinc x=
+    \begin{cases}
+        \dfrac{\sin x}{x}, & x \ne 0 \\
+        1, & x=0
+    \end{cases}
+\end{displaymath}
 \end{enumerate}
 
 \end{document}
