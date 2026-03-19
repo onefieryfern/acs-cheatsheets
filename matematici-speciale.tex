@@ -7,7 +7,7 @@
 
 \title{Breviar teoretic -- Matematici Speciale}
 \author{Andrei Florea}
-\date{18 martie 2026}
+\date{19 martie 2026}
 
 \begin{document}
 \maketitle
@@ -82,5 +82,28 @@ Formula lui Parseval:
     \end{cases}
 \end{displaymath}
 \end{enumerate}
+
+\subsection{Transformarea Fourier}
+
+O funcție $f\colon\mathbb{R}\to\mathbb{C}$ este absolut integrabilă ($f \in L^1$) dacă
+\[\int_{-\infty}^{\infty}{|f(t)|\,\mathrm{d}t}<\infty\]
+Transformata Fourier a unui semnal $f$ este $F\colon\mathbb{R}\to\mathbb{C}$:
+\[F(\omega)=\int_{-\infty}^{\infty}{f(t)e^{-i\omega t}\,\mathrm{d}t}\]
+Notăm \(f(t)\overset{\mathcal{F}}{\longrightarrow}F(\omega)\). \\
+Transformata Fourier inversă a funcției $F$ este $f\colon\mathbb{R}\to\mathbb{C}$:
+\[
+    \frac{1}{2\pi}\int_{-\omega}^{\omega}{F(\omega)e^{i\omega t}\,\mathrm{d}t}=
+    \begin{cases}
+        f(t), & \text{f continuă în t} \\
+        \dfrac{f(t-0)+f(t+0)}{2}, & \text{în rest}
+    \end{cases}
+\]
+Condiții:
+\begin{enumerate}
+\item $f\in L^1,F\in L^1$, $f$ continuă; sau
+\item $f\in L^1$ și $f$ îndeplinește condițiile lui Dirichlet
+\end{enumerate}
+
+\subsection{Transformarea Fourier Discretă}
 
 \end{document}
